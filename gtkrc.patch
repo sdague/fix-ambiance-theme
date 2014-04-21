@@ -1,0 +1,23 @@
+diff -u /usr/share/themes/Ambiance/gtk-2.0/gtkrc gtkrc
+--- /usr/share/themes/Ambiance/gtk-2.0/gtkrc	2014-04-10 11:21:07.000000000 -0400
++++ gtkrc	2013-07-19 19:31:20.090716406 -0400
+@@ -72,8 +71,8 @@
+ 	bg[NORMAL]        = @bg_color
+ 	bg[PRELIGHT]      = shade (1.02, @bg_color)
+ 	bg[SELECTED]      = @selected_bg_color
+-	bg[INSENSITIVE]   = shade (0.95, @bg_color)
+-	bg[ACTIVE]        = shade (0.9, @bg_color)
++	bg[INSENSITIVE]   = shade (0.9, @selected_bg_color)
++	bg[ACTIVE]        = shade (0.9, @selected_bg_color)
+
+ 	fg[NORMAL]        = @fg_color
+ 	fg[PRELIGHT]      = @fg_color
+@@ -91,7 +90,7 @@
+ 	base[PRELIGHT]    = shade (0.98, @bg_color)
+ 	base[SELECTED]    = @selected_bg_color
+ 	base[INSENSITIVE] = shade (0.97, @bg_color)
+-	base[ACTIVE]      = shade (0.94, @bg_color)
++	base[ACTIVE]      = shade (1.1, @selected_bg_color)
+
+ 	engine "murrine" {
+ 		contrast = 0.6
